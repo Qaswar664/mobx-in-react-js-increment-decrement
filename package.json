@@ -2,6 +2,7 @@
   "name": "react-mobax",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/Qaswar664/mobx-in-react-js-increment-decrement",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -11,6 +12,7 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "bootstrap": "^5.2.3",
+    "gh-pages": "^5.0.0",
     "mobx": "^6.7.0",
     "mobx-logger": "^0.7.1",
     "mobx-react-lite": "^3.4.0",
@@ -22,6 +24,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
